@@ -1,49 +1,25 @@
 # 小米手环 10 表盘作品集
 
-这里收录数字、情绪光团和像素火焰三个表盘项目。安装包和预览按项目管理。
+点击项目名称查看功能、操作与安装说明。
 
-| 项目 | 功能 | 下载与说明 |
+| 项目 | 亮屏 | 息屏 |
 | --- | --- | --- |
-| 只有数字 | 六色配色、两行大数字、中央可编辑快捷入口 | [查看说明](#只有数字) · [下载安装包](downloads/stack-bold-six-colors.bin) |
-| 只有情绪 | 实测压力自动换色、倾斜漂移、双击临时预览颜色 | [查看项目](emotion/README.md) |
-| 像素火焰 | 像素火苗、火星交互、换色换形、体感开关 | [查看项目](pixel-flame/README.md) |
+| [只有数字](digits/README.md)<br>六色配色与中央快捷入口 | <img src="digits/previews/active.png" width="106" alt="数字表盘亮屏"> | <img src="digits/previews/aod.png" width="106" alt="数字表盘息屏"> |
+| [只有情绪](emotion/README.md)<br>真实压力换色与体感漂移 | <img src="emotion/previews/active.png" width="106" alt="情绪表盘亮屏"> | <img src="emotion/previews/aod.png" width="106" alt="情绪表盘息屏"> |
+| [像素火焰](pixel-flame/README.md)<br>火星交互、换色换形与体感开关 | <img src="pixel-flame/previews/active.png" width="106" alt="火焰表盘亮屏"> | <img src="pixel-flame/previews/aod.png" width="106" alt="火焰表盘息屏"> |
 
-适配目标为小米手环10 NFC，型号 M2456B1，澎湃OS 3.1.28。各项目说明记录了真机确认情况和已知限制。
+每款项目使用同一目录结构。
 
-## 只有数字
+```text
+项目目录/
+├── README.md
+├── downloads/          安装包
+├── previews/
+│   ├── active.png      亮屏预览
+│   └── aod.png         息屏预览
+└── checksums.sha256    安装包校验码
+```
 
-叠刻 · 六色极简数字表盘
+适配目标为小米手环10 NFC，型号 M2456B1，澎湃OS 3.1.28。各项目分别记录已验证功能和待确认项。
 
-适配小米手环 10 的极简数字表盘作品。
-
-<p>
-<img src="previews/active.png" width="159" alt="陶土色亮屏预览">
-<img src="previews/aod.png" width="159" alt="轮廓时间息屏预览">
-</p>
-
-## 功能
-
-- 上下两行大号 24 小时时间，搭配星期、日号、步数和秒数。
-- 陶土色、亚麻白、深棕、杏橙、浅粉和玫瑰粉六套配色。
-- 长按表盘进入设置，可切换样式，并选择中央隐形快捷入口。
-- 快捷入口包含闹钟、录音机、秒表、倒计时等功能。
-- 息屏显示暗灰轮廓小时和分钟。
-
-## 真机记录
-
-测试设备为小米手环 10 NFC，型号 M2456B1，澎湃 OS 3.1.28。
-作者已确认该版本的配色切换与功能数据入口可用。其他型号和固件尚待验证。
-
-## 下载与安装
-
-[下载表盘安装包](downloads/stack-bold-six-colors.bin)
-
-通过支持此设备的第三方表盘安装工具选择文件安装。保留原始文件格式。
-
-## 项目状态
-
-此仓库用于展示和分发当前确认版本。后续发布记录会在此更新。
-
-## 制作说明
-
-表盘通过社区开源打包工具制作。可编辑功能和系统跳转结构参考了作者提供的 CMFNOTHING 示例包。
+预览统一为212 × 520像素，四角透明，按手环胶囊轮廓裁剪。时间和附属数据为示例，实机内容随设备数据更新。
